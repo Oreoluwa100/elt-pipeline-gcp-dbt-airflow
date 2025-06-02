@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: staging
+    database: credible-skill-453411-c1 
+    schema: staging_dataset
+    tables:
+      - name: raw_orders
+        description: raw table containing customer orders

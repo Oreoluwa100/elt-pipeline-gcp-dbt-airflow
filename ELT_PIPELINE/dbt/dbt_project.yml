@@ -1,0 +1,12 @@
+name: ELT_pipeline
+version: 1.0.0
+profile: ELT_pipeline
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+models:
+  ELT_pipeline: 
+    staging: 
+      +materialized: view 
+    marts:
+      +materialized: table 
