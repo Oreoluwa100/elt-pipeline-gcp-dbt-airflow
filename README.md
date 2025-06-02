@@ -12,7 +12,7 @@ This project demonstrates how to build an ELT (Extract, Load, Transform) data pi
 **4. Transform with DBT:** Data is cleaned, structured into tables, and prepared for reporting and analysis. 
 
 ### Technologies Used
-- Python: Used to script the data generation (generate_data.py), data ingestion and loading logic (data_to_gcs_to_bq.py). Also used within the Airflow DAG to orchestrate and execute these Python scripts.
+- Python: Used to script the data generation [generate_data.py](https://github.com/Oreoluwa100/elt-pipeline-gcp-dbt-airflow/blob/main/ELT_PIPELINE/dags/generate_data.py), data ingestion and loading logic [data_to_gcs_to_bq.py](https://github.com/Oreoluwa100/elt-pipeline-gcp-dbt-airflow/blob/main/ELT_PIPELINE/dags/data_to_gcs_to_bq.py). Also used within the Airflow DAG to orchestrate and execute these Python scripts.
 
 - Apache Airflow: Orchestrates the entire ELT pipeline. It schedules tasks such as data generation, uploading to GCS, loading into BigQuery, and triggering DBT models.
 
