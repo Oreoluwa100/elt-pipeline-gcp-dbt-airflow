@@ -30,4 +30,22 @@ This project demonstrates how to build an ELT (Extract, Load, Transform) data pi
 2. GCP Project with BigQuery and GCS API enabled
 3. Service account with roles; Storage Admin and Biq Query Admin
 
+### Installation Steps
 
+* Place the GCP service account key JSON file in config/gcp_credentials.json, this folder also contains .dbt folder which houses the  
+  profile.yml file - config/.dbt/profile.yml
+* Inside the project folder, start the Airflow service "docker-compose up -d --build"
+* Create an Airflow user using the docker-compose exec command
+  
+  docker-compose exec webserver airflow users create \
+     --username usernsme \
+     --firstname firstname \
+     --lastname lastname \
+     --role Admin \
+     --email email@gmail.com \
+     --password password
+* "docker-compose ps" verifies if all services are up
+* Access Airflow UI: http://localhost:8080
+* Access Bigquery: https://console.cloud.google.com/bigquery
+
+The dag is set to run automatically everyday at midnight with new order data being extrated, loaded and transformed!
