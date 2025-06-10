@@ -32,8 +32,7 @@ This project demonstrates how to build an ELT (Extract, Load, Transform) data pi
 
 ### Installation Steps
 
-* Place the GCP service account key JSON file in config/gcp_credentials.json, this folder also contains .dbt folder which houses the  
-  profile.yml file - config/.dbt/profile.yml
+* Place the GCP service account key JSON file in config/gcp_credentials.json, this folder also contains .dbt folder which houses the profile.yml file - config/.dbt/profile.yml
 * Inside the project folder, start the Airflow service "docker-compose up -d --build"
 * Create an Airflow user using the docker-compose exec command
   
