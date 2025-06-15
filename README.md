@@ -1,5 +1,5 @@
 # elt-pipeline-gcp-dbt-airflow
-This project demonstrates how to build an ELT (Extract, Load, Transform) data pipeline for processing daily orders data. The data pipeline simulates order data which mimics real orders, ingests the data into Google Cloud Storage (GCS), loads into BigQuery and transforms the data using dbt, with the whole process being orchestrated by Airflow.
+This project demonstrates how to build an ELT (Extract, Load, Transform) data pipeline for processing daily orders data. The data pipeline simulates orders data which mimics real orders, ingests the data into Google Cloud Storage (GCS), loads into BigQuery and transforms the data using dbt, with the whole process being orchestrated by Airflow.
 
 ## Overview
 **1. Data Simulation:** Generates random order data daily to mimic real-world orders.
